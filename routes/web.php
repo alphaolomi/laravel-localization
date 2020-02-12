@@ -11,10 +11,34 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+
+
+Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
+    
+    Route::get('/', function () {
+        return view('welcome');
+    });
+
+    Auth::routes();
+
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    // Route::get('test', function () {
+    //     return View::make('test');
+    // });
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+// Route::group(
+//     [
+//         'prefix' => LaravelLocalization::setLocale(),
+//         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+//     ],
+//     function () { //...
+//     }
+// );
