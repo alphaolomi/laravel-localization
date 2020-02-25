@@ -14,16 +14,16 @@
                         </div>
                     @endif
 
-                    {{ __('welcome.welcome') }}
+                    {{-- {{ __('welcome.welcome') }} --}}
 
 
-                    <a href="{{ LaravelLocalization::localizeUrl('(/test)') }}">@lang('Follow this link')</a>
-                    {{ LaravelLocalization::getLocalizedURL('en') }}
-                    {{ LaravelLocalization::getNonLocalizedURL('/sw/about') }}
-                    {{ LaravelLocalization::getURLFromRouteNameTranslated('es', 'routes.about') }}
-                    {{ LaravelLocalization::getSupportedLocales() }}
-                    {{ LaravelLocalization::getCurrentLocale() }}
-                    {{ LaravelLocalization::getCurrentLocaleName() }}
+                    {{-- <a href="{{ LaravelLocalization::localizeUrl('(/test)') }}">@lang('Follow this link')</a> --}}
+                    {{-- {{ LaravelLocalization::getLocalizedURL('en') }} --}}
+                    {{-- {{ LaravelLocalization::getNonLocalizedURL('/sw/about') }} --}}
+                    {{-- {{ LaravelLocalization::getURLFromRouteNameTranslated('es', 'routes.about') }} --}}
+                    {{-- {{ LaravelLocalization::getSupportedLocales() }} --}}
+                    {{-- {{ LaravelLocalization::getCurrentLocale() }} --}}
+                    {{-- {{ LaravelLocalization::getCurrentLocaleName() }} --}}
                 </div>
             </div>
         </div>

@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+const BASE_URL = 'http://127.0.0.1:8000'
+Cypress.Commands.add('login', () => cy.request(BASE_URL+ '/_testing/login'));
+
+Cypress.Commands.add('create', model => {
+    return cy.request(BASE_URL+ '/_testing/create?model=' + model).its('body');
+});

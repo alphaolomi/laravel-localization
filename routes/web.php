@@ -7,6 +7,16 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
+    if (App::environment('testing') || App::environment('local')) {
+        Route::get('/_testing/login', function () {
+            Auth::login(factory(\App\User::class)->create());
+        });
+        Route::get('/_testing/create', function () {
+            $modelClass = 'App\\' . request('model');
+
+            return factory($modelClass)->create();
+        });
+    }
 
     Route::get('/', function () {
         return view('index');

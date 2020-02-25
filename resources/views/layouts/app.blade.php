@@ -42,31 +42,14 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                {{ LaravelLocalization::getCurrentLocaleName() }}
-                            </button>
-                            <div class="dropdown-menu">
-
-                                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
-                                    href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                    {{ $properties['native'] }}
-                                </a>
-                                @endforeach
-                            </div>
-                        </div>
-
                         <!-- Authentication Links -->
                         @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('welcome.login') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('welcome.register') }}</a>
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                         @endif
                         @else
@@ -78,7 +61,7 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                               document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
 
@@ -89,6 +72,28 @@
                             </div>
                         </li>
                         @endguest
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded"
+                                    src="{{ asset('images/flags/'.LaravelLocalization::getCurrentLocale(). '.svg')}}"
+                                    width="26" alt="">
+                                {{ LaravelLocalization::getCurrentLocaleName() }}
+                            </button>
+                            <div class="dropdown-menu">
+
+                                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
+                                    href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                    <img class="rounded" src="{{ asset('images/flags/'.$localeCode. '.svg')}}"
+                                        width="26" alt="">
+                                    {{ $properties['native'] }}
+                                </a>
+                                @endforeach
+                            </div>
+                        </div>
+
+
                     </ul>
                 </div>
             </div>
