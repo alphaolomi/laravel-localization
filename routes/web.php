@@ -7,6 +7,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
+
     if (App::environment('testing') || App::environment('local')) {
         Route::get('/_testing/login', function () {
             Auth::login(factory(\App\User::class)->create());
@@ -40,9 +41,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 
     Route::get('/home', 'HomeController@index')->name('home');
 
-    // Route::get('test', function () {
-    //     return View::make('test');
-    // });
 });
 
 
