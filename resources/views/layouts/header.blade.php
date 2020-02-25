@@ -81,7 +81,7 @@
                                         </div>
                                     </div>
                                 </li> --}}
-                                <li><a href="{{ url('about') }} ">About Us</a></li>
+                                <li class="active" ><a class="active" href="{{ url('about') }} ">About Us</a></li>
                                 <li><a href="{{ url('courses') }} ">Course</a></li>
                                 <li><a href="{{ url('contact') }} ">Contact</a></li>
                             </ul>
