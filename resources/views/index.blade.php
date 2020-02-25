@@ -60,9 +60,10 @@
                     <div class="col-12">
                         <div class="hero-slides-content">
                             <h4 data-animation="fadeInUp" data-delay="100ms">{{ __('welcome.welcome') }}</h4>
-                            <h2 data-animation="fadeInUp" data-delay="400ms">Wellcom<h2 data-animation="fadeInUp" data-delay="400ms">
-                                {{__('Wellcome to our <br>Online University')}}</h2>
-                            <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">{{ __('Read
+                            <h2 data-animation="fadeInUp" data-delay="400ms">
+                                <h2 data-animation="fadeInUp" data-delay="400ms">
+                                    {{__('Wellcome to our <br>Online University')}}</h2>
+                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">{{ __('Read
                                 More')}}</a>
                         </div>
                     </div>
@@ -215,7 +216,7 @@
                             blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et
                             tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut
                             magna.</p>
-                        <h6><span>Maria Smith,</span> Student</h6>
+                        <h6><span>Maria Smith,</span> {{ __('Student') }}</h6>
                     </div>
                 </div>
             </div>
@@ -230,7 +231,7 @@
                         <p>Retiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus
                             blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et
                             tellus blandit. Etiam nec odio vestibul.</p>
-                        <h6><span>Shawn Gaines,</span> Student</h6>
+                        <h6><span>Shawn Gaines,</span> {{ __('Student') }}</h6>
                     </div>
                 </div>
             </div>
@@ -245,7 +246,7 @@
                         <p>Nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit.
                             Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.
                             Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.</p>
-                        <h6><span>Ross Cooper,</span> Student</h6>
+                        <h6><span>Ross Cooper,</span> {{ __('Student') }}</h6>
                     </div>
                 </div>
             </div>
@@ -261,7 +262,7 @@
                             odio vestibul. Etiam nec odio vestibu lum est mat tis effic iturut magna. Pellentesque sit
                             amet tellus blandit. Etiam nec odio ves tibul. Etiam nec odio vestibulum est mat tis effic
                             iturut magnaNec odio vestibulum est mattis effic iturut magna.</p>
-                        <h6><span>James Williams,</span> Student</h6>
+                        <h6><span>James Williams,</span> {{ __('Student') }}</h6>
                     </div>
                 </div>
             </div>
@@ -306,7 +307,7 @@
                         </div>
                         <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in
                             euismod.</p>
-                        <a href="#" class="btn academy-btn btn-sm">See More</a>
+                        <a href="#" class="btn academy-btn btn-sm"> {{ __('See More')}}</a>
                     </div>
                     <div class="popular-course-thumb bg-img"
                         style="background-image: url({{ asset('img/bg-img/pc-1.jpg') }} );"></div>
@@ -329,7 +330,7 @@
                         </div>
                         <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in
                             euismod.</p>
-                        <a href="#" class="btn academy-btn btn-sm">See More</a>
+                        <a href="#" class="btn academy-btn btn-sm"> {{ __('See More')}}</a>
                     </div>
                     <div class="popular-course-thumb bg-img"
                         style="background-image: url({{ asset('img/bg-img/pc-2.jpg') }} );"></div>
@@ -352,7 +353,7 @@
                         </div>
                         <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in
                             euismod.</p>
-                        <a href="#" class="btn academy-btn btn-sm">See More</a>
+                        <a href="#" class="btn academy-btn btn-sm"> {{ __('See More')}}</a>
                     </div>
                     <div class="popular-course-thumb bg-img"
                         style="background-image: url({{ asset('img/bg-img/pc-3.jpg') }} );"></div>
@@ -375,7 +376,7 @@
                         </div>
                         <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in
                             euismod.</p>
-                        <a href="#" class="btn academy-btn btn-sm">See More</a>
+                        <a href="#" class="btn academy-btn btn-sm"> {{ __('See More')}}</a>
                     </div>
                     <div class="popular-course-thumb bg-img"
                         style="background-image: url({{ asset('img/bg-img/pc-4.jpg')}});"></div>

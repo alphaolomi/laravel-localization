@@ -24,17 +24,36 @@
     "About Us": "Kuhusu sisi",
     "Course": "Kozi",
     "Contact": "Wasiliana",
-    "Design":"Ubunifu",
-    "See what our satisfied customers are saying about us":"Tazama kile wateja wetu waliyoridhika wanasema juu yetu",
-    "Top Popular Courses":"Kozi Maarufu",
-    "Services & Features":"Huduma na Sifa",
-    "Accordions and tabs":"Accordions na tabo",
-    "Menu ideas":"Mawazo ya menyu",
-    "Office":"Ofisi",
-    "Email":"Barua pepe",
+    "Design": "Ubunifu",
+    "See what our satisfied customers are saying about us": "Tazama kile wateja wetu waliyoridhika wanasema juu yetu",
+    "Top Popular Courses": "Kozi Maarufu",
+    "Services & Features": "Huduma na Sifa",
+    "Accordions and tabs": "Accordions na tabo",
+    "Menu ideas": "Mawazo ya menyu",
+    "Office": "Ofisi",
+    "Email": "Barua pepe",
     "All rights reserved": "Haki zote zimehifadhiwa",
-    "This site is made with":"Tovuti hii imetengenezwa na",
-    "by":"na",
-    "Usefull Links":"Viunga muhimu",
-    "Gallery":"Picha"
+    "This site is made with": "Tovuti hii imetengenezwa na",
+    "by": "na",
+    "Usefull Links": "Viunga muhimu",
+    "Gallery": "Picha",
+
+    "THE BEST": "BORA",
+    "We are the Academy": "Sisi ni Chuo",
+    "Meet the Teachers":"Kutana na Waalimu",
+    "Contact Us":"Wasiliana nasi",
+
+
+    "Student":"Mwanafunzi",
+    "Marketing Proffesor":"Uuzaji wa profesa",
+"Digital Proffesor":"Digital Proffesor",
+"HTML Proffesor":"HTML Proffesor",
+"All Staff" : "Waalimu wote"
+
+
+
+
+
+
+
 }

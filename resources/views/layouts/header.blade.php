@@ -68,7 +68,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="{{ url('/') }}">{{ __('Home')}}</a></li>
+                                <li><a href="{{  LaravelLocalization::localizeUrl('/') }}">{{ __('Home')}}</a></li>
                                 {{-- <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="index.html">Home</a></li>
@@ -107,10 +107,10 @@
                                         </div>
                                     </div>
                                 </li> --}}
-                                <li class="active"><a class="active" href="{{ url('about') }} ">{{ __('About Us') }}</a>
+                                <li class="active"><a class="active" href="{{  LaravelLocalization::localizeUrl('/about') }} ">{{ __('About Us') }}</a>
                                 </li>
-                                <li><a href="{{ url('courses') }} ">{{ __('Courses') }}</a></li>
-                                <li><a href="{{ url('contact') }} ">{{ __('Contact') }}</a></li>
+                                <li><a href="{{  LaravelLocalization::localizeUrl('/courses') }} ">{{ __('Courses') }}</a></li>
+                                <li><a href="{{  LaravelLocalization::localizeUrl('/contact') }} ">{{ __('Contact') }}</a></li>
                             </ul>
                         </div>
                         <!-- Nav End -->
@@ -119,8 +119,7 @@
                     <!-- Calling Info -->
                     <div class="calling-info">
                         <div class="call-center">
-                            <a href="tel:+255741231231"><i class="icon-telephone-2"></i> <span>(+255) 456 332 5568
-                                    889</span></a>
+                            <a href="tel:+255741231231"><i class="icon-telephone-2"></i> <span>(+255) 747 255 868</span></a>
                         </div>
                     </div>
                 </nav>

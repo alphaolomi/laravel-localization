@@ -10,8 +10,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                    <span>The Best</span>
-                    <h3>We are the Academy</h3>
+                    <span>{{ __('The Best') }}</span>
+                    <h3>{{ __('We are the Academy') }}</h3>
                 </div>
             </div>
         </div>
@@ -42,8 +42,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                    <span>The Best</span>
-                    <h3>Meet the Teachers</h3>
+                    <span>{{ __('The Best') }}</span>
+                    <h3> {{ __('Meet the Teachers') }}</h3>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                     <!-- Meta Info -->
                     <div class="teachers-info mt-30">
                         <h5>Maria D. Smith</h5>
-                        <span>Marketing Proffesor</span>
+                        <span> {{ __('Marketing Proffesor') }}</span>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                     <!-- Meta Info -->
                     <div class="teachers-info mt-30">
                         <h5>Simon Duval</h5>
-                        <span>Digital Proffesor</span>
+                        <span> {{ __('Digital Proffesor') }}</span>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <!-- Meta Info -->
                     <div class="teachers-info mt-30">
                         <h5>James Hogan</h5>
-                        <span>HTML Proffesor</span>
+                        <span> {{ __('HTML Proffesor') }}</span>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                     <!-- Meta Info -->
                     <div class="teachers-info mt-30">
                         <h5>Claudia Williams</h5>
-                        <span>Marketing Proffesor</span>
+                        <span> {{ __('Marketing Proffesor') }}</span>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="view-all text-center wow fadeInUp" data-wow-delay="800ms">
-                <a href="{{ url('/staff')}}" class="btn academy-btn">All Teachers</a>
+                <a href="{{ url('/staff')}}" class="btn academy-btn"> {{ __('All Staff') }}</a>
                 </div>
             </div>
         </div>
