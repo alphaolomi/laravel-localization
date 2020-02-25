@@ -24,14 +24,14 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget mb-100">
                         <div class="widget-title">
-                            <h6>Usefull Links</h6>
+                            <h6>{{ __('Usefull Links') }}</h6>
                         </div>
                         <nav>
                             <ul class="useful-links">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Services &amp; Features</a></li>
-                                <li><a href="#">Accordions and tabs</a></li>
-                                <li><a href="#">Menu ideas</a></li>
+                                <li><a href="#">{{ __('Home') }}</a></li>
+                                <li><a href="#">{{ __('Services &amp; Features') }}</a></li>
+{{--                                <li><a href="#">{{ __('Accordions and tabs') }}</a></li>--}}
+                                <li><a href="#">{{ __('Menu ideas') }}</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -40,7 +40,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget mb-100">
                         <div class="widget-title">
-                            <h6>Gallery</h6>
+                            <h6>{{ __('Gallery') }}</h6>
                         </div>
                         <div class="gallery-list d-flex justify-content-between flex-wrap">
                             <a href="{{ asset('img/bg-img/gallery1.jpg')}}" class="gallery-img" title="Gallery Image 1"><img src="{{asset('img/bg-img/gallery1.jpg')}}" alt=""></a>
@@ -56,19 +56,19 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget mb-100">
                         <div class="widget-title">
-                            <h6>Contact</h6>
+                            <h6>{{  __('Contact') }}</h6>
                         </div>
                         <div class="single-contact d-flex mb-30">
                             <i class="icon-placeholder"></i>
-                            <p>4127/ 5B-C Mislane Road, Gibraltar, UK</p>
+                            <p>Plot 4127/5B-C Mislane Road, Dar es salaam, Tanzania</p>
                         </div>
                         <div class="single-contact d-flex mb-30">
                             <i class="icon-telephone-1"></i>
-                            <p>Main: 203-808-8613 <br>Office: 203-808-8648</p>
+                            <p>{{ __('Office')}}: 203-808-8648</p>
                         </div>
                         <div class="single-contact d-flex">
                             <i class="icon-contract"></i>
-                            <p>office@yourbusiness.com</p>
+                            <p>{{ __('Email')}}: office@academy.com</p>
                         </div>
                     </div>
                 </div>
@@ -80,13 +80,8 @@
             <div class="row">
                 <div class="col-12">
                     <p>
-                        {{-- <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> --}}
-                        Copyright &copy;<script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved
-                        {{-- | This template is made with <i class="fa fa-heart-o"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> --}}
+                        Copyright &copy; {{ date('Y') }} {{ __('All rights reserved') }}
+                         | {{ __('This site is made with') }} <i class="fa fa-heart-o" aria-hidden="true"></i> {{ __('by') }} <a href="https://emanate.co.tz" target="_blank">Emanate Co</a>
                     </p>
                 </div>
             </div>

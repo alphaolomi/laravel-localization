@@ -9,8 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Academy - @yield('title')</title>
+    <title>{{config('app.name', 'Academy')}} | @yield('title', 'Title')</title>
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('img/core-img/favicon.ico') }}">
 

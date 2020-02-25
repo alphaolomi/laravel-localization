@@ -1,5 +1,5 @@
-  <!-- ##### Header Area Start ##### -->
-  <header class="header-area">
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
 
     <!-- Top Header Area -->
     <div class="top-header">
@@ -8,11 +8,37 @@
                 <div class="col-12 h-100">
                     <div class="header-content h-100 d-flex align-items-center justify-content-between">
                         <div class="academy-logo">
-                        <a href="{{ url('/') }}"><img src="{{asset('img/core-img/logo.png') }}" alt=""></a>
+                            <a href="{{ url('/') }}"><img src="{{asset('img/core-img/logo.png') }}" alt=""></a>
                         </div>
-                        <div class="login-content">
-                            <a href="#">Register / Login</a>
+
+                        <div class="clearfix">
+                                {{-- <a class="float-left align-content-center" href="#">{{ __('Register / Login') }}</a>
+                                                            <img src="{{ asset('images/flags/us.svg')}}" width="30" alt=""> --}}
+                            <div class="float-right dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                    <span class="text-uppercase">
+                                        <img class="rounded"
+                                            src="{{ asset('images/flags/'.LaravelLocalization::getCurrentLocale(). '.svg')}}"
+                                            width="26" alt="">
+                                        {{ LaravelLocalization::getCurrentLocale() }}</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                    <a class="dropdown-item text-uppercase" rel="alternate" hreflang="{{ $localeCode }}"
+                                        href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                        <img class="rounded" src="{{ asset('images/flags/'.$localeCode. '.svg')}}"
+                                            width="26" alt="">
+                                        {{-- {{ $l }} --}}
+                                        {{ $properties['native'] }}
+                                    </a>
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -42,7 +68,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="{{ url('/') }}">Home</a></li>
+                                <li><a href="{{ url('/') }}">{{ __('Home')}}</a></li>
                                 {{-- <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="index.html">Home</a></li>
@@ -81,9 +107,10 @@
                                         </div>
                                     </div>
                                 </li> --}}
-                                <li class="active" ><a class="active" href="{{ url('about') }} ">About Us</a></li>
-                                <li><a href="{{ url('courses') }} ">Course</a></li>
-                                <li><a href="{{ url('contact') }} ">Contact</a></li>
+                                <li class="active"><a class="active" href="{{ url('about') }} ">{{ __('About Us') }}</a>
+                                </li>
+                                <li><a href="{{ url('courses') }} ">{{ __('Courses') }}</a></li>
+                                <li><a href="{{ url('contact') }} ">{{ __('Contact') }}</a></li>
                             </ul>
                         </div>
                         <!-- Nav End -->
@@ -92,7 +119,8 @@
                     <!-- Calling Info -->
                     <div class="calling-info">
                         <div class="call-center">
-                            <a href="tel:+255741231231"><i class="icon-telephone-2"></i> <span>(+255) 456 332 5568 889</span></a>
+                            <a href="tel:+255741231231"><i class="icon-telephone-2"></i> <span>(+255) 456 332 5568
+                                    889</span></a>
                         </div>
                     </div>
                 </nav>
