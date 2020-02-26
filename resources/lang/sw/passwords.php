@@ -13,10 +13,16 @@ return [
     |
     */
 
-    'reset' => 'Your password has been reset!',
-    'sent' => 'We have e-mailed your password reset link!',
-    'throttled' => 'Please wait before retrying.',
-    'token' => 'This password reset token is invalid.',
-    'user' => "We can't find a user with that e-mail address.",
+    'reset' => "Nenosiri lako limepatikana tena! ",
+    'sent' => "Tumetuma barua pepe yako ya kiungo cha kuweka upya nywila!",
+    'throttled' => "Tafadhali subiri kabla ya kujaribu tena.",
+    'token' => "Ishara ya kuweka upya nenosiri sio sahihi.",
+    'user' => "Hatuwezi kupata mtumiaji na anwani hiyo ya barua-pepe.",
+
+
+
+
+
+
 
 ];
