@@ -36,11 +36,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
         return view('courses.index');
     });
 
-
     Auth::routes();
-
-    Route::get('/home', 'HomeController@index')->name('home');
-
+    Route::group(
+        ['prefix' => 'admin'],
+        function () {
+            Route::get('/home', 'HomeController@index')->name('home');
+        }
+    );
 });
 
 
