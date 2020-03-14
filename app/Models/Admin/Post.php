@@ -2,8 +2,9 @@
 
 namespace App\Models\Admin;
 
-use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Post
@@ -17,9 +18,23 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Post extends Model
 {
     use SoftDeletes;
+    use Sluggable;
 
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
     public $table = 'posts';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -53,5 +68,5 @@ class Post extends Model
         'description' => 'required|min3'
     ];
 
-    
+
 }
