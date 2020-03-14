@@ -2,7 +2,7 @@
 
 namespace App\Models\Admin;
 
-use Eloquent as Model;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
@@ -19,7 +19,7 @@ class Course extends Model
     use SoftDeletes;
 
     public $table = 'courses';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -53,5 +53,5 @@ class Course extends Model
         'description' => 'required|min:3'
     ];
 
-    
+
 }
