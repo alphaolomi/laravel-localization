@@ -1,23 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="content-header">
-        <h1>
+
+<div class="content">
+    @include('adminlte-templates::common.errors')
+    <div class="card card-primary">
+        <div class="card-header">
             @lang('models/posts.singular')
-        </h1>
-    </section>
-    <div class="content">
-        @include('adminlte-templates::common.errors')
-        <div class="box box-primary">
-            <div class="box-body">
-                <div class="row">
-                    {!! Form::open(['route' => 'admin.posts.store']) !!}
+        </div>
+        <div class="card-body">
+            <div class="row">
+                {!! Form::open(['route' => 'admin.posts.store']) !!}
 
-                        @include('admin.posts.fields')
-
-                    {!! Form::close() !!}
-                </div>
+                    @include('admin.posts.fields')
+                
+                {!! Form::close() !!}
             </div>
         </div>
     </div>
+</div>
 @endsection

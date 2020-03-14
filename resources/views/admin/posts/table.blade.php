@@ -4,7 +4,7 @@
             <tr>
                 <th>@lang('models/posts.fields.title')</th>
         <th>@lang('models/posts.fields.description')</th>
-        <th>@lang('models/posts.fields.user_id')</th>
+        {{-- <th>@lang('models/posts.fields.user_id')</th> --}}
                 <th colspan="3">@lang('crud.action')</th>
             </tr>
         </thead>
@@ -13,7 +13,7 @@
             <tr>
                 <td>{{ $post->title }}</td>
             <td>{{ $post->description }}</td>
-            <td>{{ $post->user_id }}</td>
+            {{-- <td>{{ $post->user_id }}</td> --}}
                 <td>
                     {!! Form::open(['route' => ['admin.posts.destroy', $post->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

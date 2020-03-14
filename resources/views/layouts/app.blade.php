@@ -100,7 +100,12 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            {{-- <div class="col-md-12"> --}}
+
+                <div class="container">
+                    @yield('content')
+                </div>
+            {{-- </div> --}}
         </main>
     </div>
 </body>
