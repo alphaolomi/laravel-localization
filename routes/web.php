@@ -57,3 +57,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 //     function () { //...
 //     }
 // );
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('posts', 'Admin\PostController', ["as" => 'admin']);
+});
