@@ -9,25 +9,25 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "cviebrock/eloquent-sluggable": "^6.0",
+        "cviebrock/eloquent-sluggable": "^7.0",
         "barryvdh/laravel-translation-manager": "^0.5.7",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "^6.2",
+        "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^1.1",
+        "laravel/ui": "^2.0",
         "infyomlabs/laravel-generator": "6.0.x-dev",
         "laravelcollective/html": "^6.0",
         "infyomlabs/adminlte-templates": "6.0.x-dev",
         "doctrine/dbal": "~2.3",
         "mcamara/laravel-localization": "^1.4",
-        "proengsoft/laravel-jsvalidation": "^2.5"
+        "proengsoft/laravel-jsvalidation": "^4.0"
     },
     "require-dev": {
-        "facade/ignition": "^1.4",
+        "facade/ignition": "^2.0",
         "fzaninotto/faker": "^1.9.1",
         "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^3.0",
-        "phpunit/phpunit": "^8.0"
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.0"
     },
     "config": {
         "optimize-autoloader": true,
