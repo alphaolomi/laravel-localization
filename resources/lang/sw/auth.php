@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Uthibitisho huu hailingani na rekodi zetu.',
-    'throttle' => 'Majaribio mengi za kuingia. Tafadhali jaribu tena baada sekunde :sekunde.',
+    'failed' => 'These credentials do not match our records.',
+    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];
