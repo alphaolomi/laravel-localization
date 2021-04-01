@@ -13,16 +13,10 @@ return [
     |
     */
 
-    'reset' => "Nenosiri lako limepatikana tena! ",
-    'sent' => "Tumetuma barua pepe yako ya kiungo cha kuweka upya nywila!",
-    'throttled' => "Tafadhali subiri kabla ya kujaribu tena.",
-    'token' => "Ishara ya kuweka upya nenosiri sio sahihi.",
+    'reset' => 'Nenosiri lako limepatikana tena! ',
+    'sent' => 'Tumetuma barua pepe yako ya kiungo cha kuweka upya nywila!',
+    'throttled' => 'Tafadhali subiri kabla ya kujaribu tena.',
+    'token' => 'Ishara ya kuweka upya nenosiri sio sahihi.',
     'user' => "Hatuwezi kupata mtumiaji na anwani hiyo ya barua-pepe.",
-
-
-
-
-
-
 
 ];
