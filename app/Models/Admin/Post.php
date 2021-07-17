@@ -64,8 +64,8 @@ class Post extends Model
      * @var array
      */
     public static $rules = [
-        'title' => 'required|min3',
-        'description' => 'required|min3'
+        'title' => 'required|min:3',
+        'description' => 'required|min:3'
     ];
 
 

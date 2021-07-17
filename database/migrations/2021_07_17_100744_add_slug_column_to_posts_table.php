@@ -4,9 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCoursesTable extends Migration
+class AddSlugColumnToPostsTable extends Migration
 {
-
     /**
      * Run the migrations.
      *
@@ -14,13 +13,8 @@ class CreateCoursesTable extends Migration
      */
     public function up()
     {
-        Schema::create('courses', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->text('description');
-            $table->date('duration');
-            $table->timestamps();
-            $table->softDeletes();
+        Schema::table('posts', function (Blueprint $table) {
+            $table->text('slug')->nullable();
         });
     }
 
@@ -31,6 +25,8 @@ class CreateCoursesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('courses');
+        Schema::table('posts', function (Blueprint $table) {
+            $table->dropColumn(['slug']);
+        });
     }
 }

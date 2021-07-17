@@ -7,7 +7,8 @@ use App\Http\Requests\Admin\UpdatePostRequest;
 use App\Http\Controllers\AppBaseController;
 use App\Models\Admin\Post;
 use Illuminate\Http\Request;
-use Flash;
+use Illuminate\Support\Facades\Auth;
+use Laracasts\Flash\Flash;
 use Response;
 
 class PostController extends AppBaseController
@@ -48,6 +49,12 @@ class PostController extends AppBaseController
     public function store(CreatePostRequest $request)
     {
         $input = $request->all();
+
+        if(!Auth::check()) {
+            return redirect()->route('login');
+        }
+
+        $input['user_id'] = Auth::user()->id;
 
         /** @var Post $post */
         $post = Post::create($input);
