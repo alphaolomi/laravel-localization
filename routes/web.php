@@ -26,8 +26,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     // Admin routes
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/home', 'HomeController@index')->name('home');
-        Route::resource('posts', 'Admin\PostController', ["as" => 'admin']);
-        Route::resource('courses', 'Admin\CourseController', ["as" => 'admin']);
+        Route::resource('posts', '\App\Http\Controllers\Admin\PostController', ["as" => 'admin']);
+        Route::resource('courses', '\App\Http\Controllers\Admin\CourseController', ["as" => 'admin']);
     });
 });
 

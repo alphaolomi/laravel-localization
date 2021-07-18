@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Response;
 use InfyOm\Generator\Utils\ResponseUtil;
-use Response;
 
 /**
  * @SWG\Swagger(

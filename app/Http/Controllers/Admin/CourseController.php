@@ -7,7 +7,7 @@ use App\Http\Requests\Admin\UpdateCourseRequest;
 use App\Http\Controllers\AppBaseController;
 use App\Models\Admin\Course;
 use Illuminate\Http\Request;
-use Flash;
+use Laracasts\Flash\Flash;
 use Response;
 
 class CourseController extends AppBaseController
