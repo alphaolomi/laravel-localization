@@ -7,7 +7,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "actuallymab/laravel-comment": "^1.0",
-        "barryvdh/laravel-translation-manager": "^0.5.9",
+        "barryvdh/laravel-translation-manager": "^0.6.0",
         "cviebrock/eloquent-sluggable": "^8.0",
         "doctrine/dbal": "~3.0",
         "fideloper/proxy": "^4.4",
