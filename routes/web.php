@@ -1,13 +1,23 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+
+
 
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
-    // Authentification Route
-    Auth::routes();
 
     // Pages routes
     Route::get('/', function () {
@@ -19,18 +29,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('/contact', function () {
         return view('pages.contact');
     });
-    Route::get('/courses', function () {
-        return view('courses.index');
-    });
-
-    // Admin routes
-    Route::group(['prefix' => 'admin'], function () {
-        Route::get('/home', 'HomeController@index')->name('home');
-        Route::resource('posts', '\App\Http\Controllers\Admin\PostController', ["as" => 'admin']);
-        Route::resource('courses', '\App\Http\Controllers\Admin\CourseController', ["as" => 'admin']);
-    });
+    // Route::get('/courses', function () {
+    //     return view('courses.index');
+    // });
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
